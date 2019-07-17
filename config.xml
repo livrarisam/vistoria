@@ -52,6 +52,7 @@
     <plugin name="cordova-plugin-media-capture" spec="~3.0.3" />
     <plugin name="cordova-plugin-dialogs" spec="~2.0.2" />
     <plugin name="cordova-plugin-network-information" spec="~2.0.2" />
+    <plugin name="cordova-plugin-file" spec="~6.0.2" />
     <plugin name="cordova-plugin-file-transfer" spec="~1.7.1" />
 
     <!-- Define app icon for each platform. This is a relative path to config.xml.
