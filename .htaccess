@@ -1,0 +1,33 @@
+<IfModule mod_headers.c>
+    Header set Connection keep-alive
+    <filesmatch "\.(flv|swf|divx|mp3|m4a|mp4|m4v|mpeg|mpg|mpe|mpp|ra|ram|wav|wma|asf|asx|wax|wmv|wmx|avi|zip|gz|gzip|tar|doc|docx|odt|pdf|pps|ppt|pptx|pot)$">
+        Header set Cache-Control "max-age=31536000"
+    </filesmatch>
+    <filesmatch "\.(ico|jpg||jpeg|png|gif|svg|svgz|tif|tiff|bmp)$">
+        Header set Cache-Control "max-age=31536000"
+    </filesmatch>
+    <filesmatch "\.(eot|woff|otf|ttc|ttf)$">
+        Header set Cache-Control "max-age=31536000"
+    </filesmatch>
+    # css and js should use private for proxy caching https://developers.google.com/speed/docs/best-practices/caching#LeverageProxyCaching
+    <filesmatch "\.(css)$">
+        Header set Cache-Control "max-age=2592000"
+    </filesmatch>
+    <filesmatch "\.(js)$">
+        Header set Cache-Control "max-age=2592000"
+    </filesmatch>
+
+    Header unset Expires
+    Header unset Pragma
+    FileETag None
+    Header unset ETag 
+    Header unset Last-Modified
+
+    # http://stackoverflow.com/questions/27228682/whats-the-opposite-of-header-append-vary-user-agent-how-to-remove-the-user
+    Header edit Vary (.*)User-Agent(.*) $1$2
+    # Remove leading or trailing ',' without making things complex above
+    Header edit Vary ^,?(.*),?$ $1
+    # 2.4-only: remove empty Vary header
+    Header unset Vary "expr=resp('Vary') =~ /^$/"
+
+</IfModule>
