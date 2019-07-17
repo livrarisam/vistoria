@@ -1608,6 +1608,25 @@ $(document).ready(function(){
 		$(this).removeClass("unloaded");
 
 	});
+
+	$("body").on("click", "#tirarFoto", function(ev){
+
+    var srcType = Camera.PictureSourceType.CAMERA;
+    var options = setOptions(srcType);
+    var func = createNewFileEntry;
+
+    navigator.camera.getPicture(function cameraSuccess(imageUri) {
+
+        displayImage(imageUri);
+        // You may choose to copy the picture, save it somewhere, or upload.
+        func(imageUri);
+
+    }, function cameraError(error) {
+        alert("Unable to obtain picture: " + error);
+
+    }, options);
+	});	
+
 });
 
 // start functions
@@ -2659,24 +2678,6 @@ function setOptions(srcType) {
         correctOrientation: true  //Corrects Android orientation quirks
     }
     return options;
-}
-
-function openCamera() {
-
-    var srcType = Camera.PictureSourceType.CAMERA;
-    var options = setOptions(srcType);
-    var func = createNewFileEntry;
-
-    navigator.camera.getPicture(function cameraSuccess(imageUri) {
-
-        displayImage(imageUri);
-        // You may choose to copy the picture, save it somewhere, or upload.
-        func(imageUri);
-
-    }, function cameraError(error) {
-        alert("Unable to obtain picture: " + error);
-
-    }, options);
 }
 
 function displayImage(imgUri) {
