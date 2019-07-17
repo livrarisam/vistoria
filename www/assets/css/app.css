@@ -1,0 +1,268 @@
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+
+.navbar-toggler {
+  display: none;
+}
+
+.main-panel > .navbar {
+  /*background: linear-gradient(to bottom, #adadad 10%,#ededed 100%);*/
+  min-height: 70px;
+}
+
+.login-box {
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+a.esqueci-senha {
+	float: right;
+  margin-top: 26px;
+  font-size: 18px;
+}
+
+.main-panel > .content {
+  margin-top: 50px;
+  display: none;
+}
+
+.main-panel > .content.active {
+  display: block !important;
+}
+
+a.navbar-voltar {
+  display: none;
+}
+
+a.navbar-inicio {
+  display: none;
+}
+
+.footer {
+  padding: 0;
+}
+
+/*Material FileInput*/
+.btn-file{position:relative;overflow:hidden;vertical-align:middle}.btn-file>input{position:absolute;top:0;right:0;width:100%;height:100%;margin:0;font-size:23px;cursor:pointer;filter:alpha(opacity=0);opacity:0;direction:ltr}.fc button,.fc button .fc-icon,.fc-icon:after{position:relative}.fc-icon,body .fc{font-size:1em}.fileinput{display:inline-block;margin-bottom:9px}.fileinput .form-control{display:inline-block;padding-top:7px;padding-bottom:5px;margin-bottom:0;vertical-align:middle;cursor:text}.fileinput .thumbnail{display:inline-block;margin-bottom:10px;overflow:hidden;text-align:center;vertical-align:middle;max-width:250px;box-shadow:0 10px 30px -12px rgba(0,0,0,.42),0 4px 25px 0 rgba(0,0,0,.12),0 8px 10px -5px rgba(0,0,0,.2)}.fileinput .thumbnail.img-circle{border-radius:50%;max-width:100px}.fileinput .thumbnail>img{max-height:100%;width:100%}.fileinput .btn{vertical-align:middle}.fileinput-exists .fileinput-new,.fileinput-new .fileinput-exists{display:none}.fileinput-inline .fileinput-controls{display:inline}.fileinput-filename{display:inline-block;overflow:hidden;vertical-align:middle}.form-control .fileinput-filename{vertical-align:bottom}.fileinput.input-group{display:table}.fc-button-group,.fc-icon{display:inline-block}.fileinput.input-group>*{position:relative;z-index:2}.fc-row .fc-bg,.fileinput.input-group>.btn-file{z-index:1}.fileinput-new .input-group .btn-file,.fileinput-new.input-group .btn-file{border-radius:0 4px 4px 0}.fileinput-new .input-group .btn-file.btn-sm,.fileinput-new .input-group .btn-file.btn-xs,.fileinput-new .input-group .btn-group-sm>.btn-file.btn,.fileinput-new.input-group .btn-file.btn-sm,.fileinput-new.input-group .btn-file.btn-xs,.fileinput-new.input-group .btn-group-sm>.btn-file.btn{border-radius:0 3px 3px 0}.fileinput-new .input-group .btn-file.btn-lg,.fileinput-new .input-group .btn-group-lg>.btn-file.btn,.fileinput-new.input-group .btn-file.btn-lg,.fileinput-new.input-group .btn-group-lg>.btn-file.btn{border-radius:0 6px 6px 0}.form-group.has-warning .fileinput .fileinput-preview{color:#ff9800}.form-group.has-warning .fileinput .thumbnail{border-color:#ff9800}.form-group.has-error .fileinput .fileinput-preview{color:#f44336}.form-group.has-error .fileinput .thumbnail{border-color:#f44336}.form-group.has-success .fileinput .fileinput-preview{color:#4caf50}.form-group.has-success .fileinput .thumbnail{border-color:#4caf50}.input-group-addon:not(:first-child){border-left:0}.thumbnail{border:0;border-radius:4px;padding:0}
+
+.card-collapse, .card-collapse .card-header {
+  box-shadow: none;
+  background-color: transparent;
+  border-radius: 0;
+}
+
+.card-collapse .card-header a {
+  color: #3C4858;
+  font-size: .9375rem;
+  display: block;
+}
+
+.card-collapse .card-header {
+  border-bottom: 1px solid #ddd;
+  padding: 25px 10px 5px 0;
+  margin: 0;
+  box-shadow: none!important;
+  background: #fff;
+}
+
+tbody.rowlink a {
+  color: initial;
+}
+
+.form-check .form-check-input:checked + .form-check-sign .check {
+  background: #21c2d6;
+}
+
+.form-check .form-check-sign .check {
+  border: 1px solid rgb(22, 184, 205);
+}
+
+.form-check .form-check-label span {
+  left: 1px;
+  top: 1px;
+}
+
+fieldset.form-produtos {
+  display: none;
+}
+
+span.envio-pendente {
+  position: absolute;
+  margin-left: 29%;
+  left: 0px;
+  font-weight: bold;
+  color: #888;  
+}
+
+ul.fancytree-container {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif; 
+  font-size: 12pt;
+  background-color: transparent;
+  border: 0; 
+}
+
+.fancytree-icon{
+  display: none !important;
+}
+
+.fancytree-plain span.fancytree-node:hover span.fancytree-title {
+  background-color: transparent;
+  border-color: #fff;
+  color: initial;
+}
+
+.fancytree-plain.fancytree-container.fancytree-treefocus span.fancytree-active span.fancytree-title,
+.fancytree-plain.fancytree-container.fancytree-treefocus span.fancytree-selected span.fancytree-title {
+  background-color: transparent;
+  border-color: #fff;
+  color: #e91e63;
+  border-radius: 5px;
+}
+
+.fancytree-plain span.fancytree-active span.fancytree-title, .fancytree-plain span.fancytree-selected span.fancytree-title {
+  background-color: transparent;
+  border-color: #fff;
+  color: #e91e63;
+  border-radius: 5px;
+}
+
+.table-produtos > tbody > tr > td {
+  padding: 8px 8px;
+}
+
+.card .card-body .table-produtos .form-group {
+  margin: 0;
+  padding: 0;
+}
+
+.form-control.borders {
+  border: 1px solid #ddd;
+  padding: 2px;
+}
+
+.main-panel {
+  width: 100%;
+}
+
+.form-servicos .bmd-label-static {
+  position: initial;
+  font-size: 16px;
+}
+
+.form-check .form-check-label .circle {
+  border-color: #21b2c6 !important;
+}
+
+.form-check .form-check-label .circle .check {
+  height: 11px;
+  width: 11px;
+  border-radius: 100%;
+  background-color: #21b2c6;
+  -webkit-transform: scale3d(0,0,0);
+  transform: scale3d(0,0,0);
+}
+
+.assuntoselect {
+  width: 100% !important;
+} 
+
+.form-group .bootstrap-select.btn-group {
+  margin-bottom: 5px;
+}
+
+.card .card-body .panel-fotos .form-group {
+  margin-top: 0;
+}
+
+.panel-fotos.visible {
+  display: block !important;
+}
+
+
+#signatureparent {
+  color:darkblue;
+  background-color:#f7f7f7;
+  padding:20px;
+}
+
+/*This is the div within which the signature canvas is fitted*/
+#signature {
+  border: 1px dotted #333;
+  /*background-color:lightgrey;*/
+}
+
+/* Drawing the 'gripper' for touch-enabled devices */ 
+html.touch #content {
+  float:left;
+  width:92%;
+}
+html.touch #scrollgrabber {
+  float:right;
+  width:4%;
+  margin-right:2%;
+  background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAFCAAAAACh79lDAAAAAXNSR0IArs4c6QAAABJJREFUCB1jmMmQxjCT4T/DfwAPLgOXlrt3IwAAAABJRU5ErkJggg==)
+}
+html.borderradius #scrollgrabber {
+  border-radius: 1em;
+}
+ 
+.form-servicos legend {
+  padding-left: 12px;
+  padding-top: 12px;
+  color: #00bcd4;
+}
+
+#edit-ambiente input[type=text] {
+  width: 100%;
+}
+
+.table-produtos .form-group, .table-servicos .form-group, .table-maodeobra .form-group {
+  margin: 0 !important;
+}
+
+.bootstrap-filestyle {
+  width: initial;
+  float: left;
+}
+
+#page-analise .panel {
+  width: 100%;
+}
+
+.cancel-audio, .save-audio, .record-audio {
+  display: none;
+}
+
+#recordingslist {
+  list-style: none;
+  padding-left: 0;  
+}
+
+#recordingslist li audio {
+  /*height: 35px;*/
+}
+
+#page-analise input[type="number"] {
+  max-width: 60px;
+}
+
+#page-analise .remove-lista {
+  padding: 5px;
+}
+
+#form-assuntos .panel .selectize-input {
+  height: 37px;
+  overflow: hidden;
+}
+
+#form-assuntos .panel .selectize-input .item {
+  max-height: 23px;
+  overflow: hidden;
+}
